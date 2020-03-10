@@ -1,0 +1,47 @@
+* {
+    font-family: Arial;
+}
+
+html {
+	background-image: url('wood.jpg');
+}
+
+#wrapper {
+	width: 30%;
+	background-color: #FFFF99;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#orderForm { 
+	margin: 0px 30px 0px 30px;
+}
+
+h1, h2 {
+	color: maroon;
+	text-align: center;
+	border: 3px solid maroon;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h3 {
+	color: maroon;
+	text-align: center;
+	border: 3px solid maroon;
+}
+
+input {
+	text-align: center;
+}
+
+.subtotalLine {
+	border-bottom:1pt solid black;
+}
+
+#sizePrice {
+	display: inline-block;
+}
+
+
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<title>Pizza App</title>
+		<script src="myscripts.js"></script>
+	</head>
+	<body>
+		<div id = "wrapper">
+			<br>
+			<h1>Pizza App</h1>
+
+			<h2>Order your pizza(s)</h2>
+			
+			<form onInput="UpdateSubtotals()">
+				
+				<div id="orderForm">
+
+					<h3>Select Size</h3>
+					<table>
+						<col width=25%>
+						<col width=5%>
+						<tr>
+							<th align="left">Size</th>
+							<th align="left">Cost</th>
+						</tr>
+						<tr>
+							<td>
+								<select id="sizes">
+									<option value=0>Choose a Size</option>
+									<option label = "Small  - $10" value=10></option>
+									<option label = "Medium - $13" value=13></option>
+									<option label = "Large  - $16" value=16></option>
+								</select>
+							</td>
+							<td id="sizePrice">
+							</td>
+						</tr>
+					</table>
+					
+					<h3>Select Toppings</h3>
+					<table>
+						<col width=20%>
+						<col width=5%>
+						<col width=5%>	
+						<tr>
+							<th align="left">Topping</th>
+							<th align="left">Per</th>
+						<tr>
+							<td>
+								<input type="checkbox" id="topping1" name="toppings" value=3>
+								<label for="topping1">Pepperoni</label>
+							</td>
+							<td>$3</td>						
+							<td></td>
+						</tr>	
+						<tr>
+							<td>
+								<input type="checkbox" id="topping2" name="toppings" value=3>
+								<label for="topping2">Ham</label>
+							</td>
+							<td>$3</td>							
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="topping3" name="toppings" value=1>
+								<label for="topping3">Olive</label>
+							</td>
+							<td>$1</td>							
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="topping4" name="toppings" value=2>
+								<label for="topping4">Mushroom</label>
+							</td>
+							<td>$2</td>							
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" id="topping5" name="toppings" value=1>
+								<label for="topping5">Green Pepper</label>
+							</td>
+							<td>$1</td>							
+							<td></td>
+						</tr>							
+						<tr>
+							<td><p>Toppings Subtotal</p></td>
+							<td></td>
+							<td><p id="toppingsSubtotal" class="subtotalLine"></p></td>
+						</tr>							
+						<tr>
+							<td id="pizzaDescription">Pizza</td>
+							<td></td>
+							<td>
+								<p id="pizzaTotal" class="subtotalLine">$0</p>
+							</td>
+						</tr>
+					<table>
+				
+					<input type="button" value="Add pizza to order" onClick="AddPizzaToOrder()">
+				
+					<h2>Order</h2>
+					<table>
+						<col width=25%>
+						<col width=5%>													
+						<tr>
+							<th align="left">Pizza</th>
+							<th align="left">Total</th>
+						</tr>
+						<tr>
+							<td id="pizza1Desc"></td>
+							<td id="pizza1Cost"></td>
+						</tr>
+
+						<tr>
+							<td id="pizza2Desc"></td>
+							<td id="pizza2Cost"></td>
+						</tr>
+						
+						<tr>
+							<td id="pizza3Desc"></td>
+							<td id="pizza3Cost"></td>
+						</tr>	
+
+						<tr>
+							<td id="pizza4Desc"></td>
+							<td id="pizza4Cost"></td>
+						</tr>	
+						
+						<tr>
+							<td id="pizza5Desc"></td>
+							<td id="pizza5Cost"></td>
+						</tr>						
+						
+						<tr>
+							<td>Order Total</td>
+							<td id="orderTotal"></td>
+						</tr>						
+					</table>
+					<br>
+				</div>	
+			</form>
+			<br>
+		</div>
+	</body>
+</html>
